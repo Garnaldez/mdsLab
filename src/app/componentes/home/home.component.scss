@@ -1,0 +1,72 @@
+
+#content {
+    
+    padding: 20px;
+    min-height: 80vh;
+    transition: all 0.3s;
+    background: none !important;
+    padding: 0% 10%;
+}
+mat-sidenav {
+    width: 18%;
+    background: none !important;
+    padding-left: -10%;
+}
+mat-list-item a {
+    text-decoration: none;
+    color: #000;
+}
+app-footer {
+    position: fixed;
+    min-height: 10vh;
+    width: 100%;
+}
+.card-img-block > img{
+    width: 60% !important;
+    margin: 0 auto;
+    display: block;
+    //border-radius: 10px;
+}
+.mat-drawer-container {
+    background: none !important;
+    color: rgba(0,0,0,.87);
+}
+.mat-drawer-backdrop.mat-drawer-shown {
+    background: none;
+    background-color: rgba(0,0,0,0) !important;
+}
+#main > mat-sidenav-container > div.mat-drawer-backdrop.ng-star-inserted.mat-drawer-shown {
+    background: none;
+    background-color: rgba(0,0,0,0) !important;
+}
+
+
+
+  .profile-card-5 .card-img-block img{
+    border-radius:5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.63);
+    width: fit-content;
+    max-width: 80%;
+}
+.profile-card-5 .card-img-block {
+    width: 91%;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    
+}
+
+.profile-card-5 p{
+    font-size:14px;
+    font-weight:300;
+    
+}
+.textoPie{
+    font-size: 10px !important;
+    text-align: center;
+}
+
+.img-header{
+    border-bottom: 1px solid #1F6CAB;
+    padding-bottom: 1rem;
+}

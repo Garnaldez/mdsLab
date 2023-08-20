@@ -1,0 +1,45 @@
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Ajustar el ancho del formulario en pantallas pequeñas */
+  @media (max-width: 576px) {
+    .col-md-6 {
+      max-width: 100%;
+    }
+  }
+  .card-header{
+    border-bottom:none;
+    background-color: white;
+  }
+
+  .mat-raised-button {
+    background-color: #1F6CAB; /* Color de fondo */
+    color: white; /* Color del texto */
+    transition: background-color 0.2s ease-in-out; /* Transición al resaltar */
+  }
+  
+  .mat-raised-button:hover,
+  .mat-raised-button:focus {
+    background-color: #125798; /* Color de fondo al resaltar */
+  }
+
+  mat-form-field {
+    width: 100%;
+    color:#1F6CAB ;
+}
+  .border-form{
+    border-left: 1px solid #1F6CAB;
+  }
+
+  .fa-2xl {
+    font-size: 4em;
+    line-height: initial;
+    vertical-align: -.1875em;
+}
+ 

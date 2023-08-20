@@ -1,0 +1,33 @@
+#header{
+    min-height: 10vh;
+}
+#mat-toolbar{
+    min-height: 10vh;
+    background:none !important
+}
+
+#mat-toolbar > button{
+    background: none !important;
+    border-style: none !important;
+}
+h1 {
+    width:500px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+mat-icon{
+    color: white;
+    font-size: 40px;
+    height: 30px;
+    width: 30px;
+}
+  .title{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid #FFF !important;
+  }
+  .pointer{
+    cursor: pointer;
+  }

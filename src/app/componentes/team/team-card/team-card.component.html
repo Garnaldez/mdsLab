@@ -1,0 +1,35 @@
+
+<section class="pt-0">
+  <div class="container">
+    <div class="d-flex justify-content-center h-100"> 
+      <div class="col-md-12 col-xs-12 col-xxl-10 col-sm-12 col-xxxl-8">
+        <div class="card profile-card-5 h-100 d-flex flex-column">
+          <div class="card-img-block justify-content-center d-flex">
+            <img class="card-img-top" src={{member.urlImagen}} alt="Imagen de perfil de {{member.name}}" height="300" width="210">
+          </div>
+          <div class="card-body pt-0">
+            <h3 class="card-title mx-4">{{member.name}}</h3>
+            <h4 class="card-title mx-4">{{member.role}}</h4>
+            <div class="d-flex flex-wrap justify-content-center">
+              <div class="mx-4 d-flex justify-content-start flex-column">
+                <p *ngFor="let item of member.galones" class="list-group-item">{{item}}</p>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-2">
+              <a class="mx-2" href={{member.urlLinkedin}} target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+              </a>
+              <a class="mx-2" href={{member.urlOrcid}} target="_blank">
+                <i class="fa-brands fa-orcid fa-2x"></i>
+              </a>
+              <a class="mx-2" href={{member.urlTwitter}} target="_blank">
+                <i class="fa-brands fa-square-twitter fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

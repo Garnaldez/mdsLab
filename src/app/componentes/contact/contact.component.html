@@ -1,0 +1,57 @@
+<div class="container ">
+    <div class="row container card flex-row justify-content-between">
+      <div class="col-md-8 row">
+
+        
+        
+      <google-map class="col-md-8" [center]="{lat: lat, lng: long}" [options]="options">
+        <map-marker [position]="{lat: lat, lng: long}"></map-marker>
+      </google-map>
+      <div class="col-md-4 justify-content-around d-flex flex-column">
+        <div class="card-header">
+          <h2 class="text-center"><i class="fa-regular fa-compass fa-2xl" style="color: #1f6cab;"></i></h2>
+        </div>
+        <div class="mx-1 d-flex justify-content-start flex-column"> 
+        <p>Department of Biochemistry and Molecular Biology</p>
+        <p>Faculty of Pharmacy</p>
+        <p>Laboratory 13</p>
+        <p>Pl. de Ramón y Cajal, s/n </p>
+        <p> 28040 Madrid</p>
+      </div>
+      </div>
+       
+      </div>
+      <div class="col-md-4 py-4 border-form">
+        <div class="card-header">
+            <h2 class="text-center">Contact Us</h2>
+          </div>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="form-group">
+            <mat-form-field appearance="fill">
+                <mat-label>Name:</mat-label>
+                <input matInput type="text" formControlName="name" required>
+                <mat-error *ngIf="submitted && contactForm.get('name')?.invalid">Nombre es requerido</mat-error>
+              </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field appearance="fill">
+                <mat-label>Mail:</mat-label>
+                <input matInput type="email" formControlName="email" required>
+                <mat-error *ngIf="submitted && contactForm.get('email')?.hasError('required')">Correo electrónico es requerido</mat-error>
+                <mat-error *ngIf="submitted && contactForm.get('email')?.hasError('email')">Correo electrónico inválido</mat-error>
+              </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field appearance="fill">
+                <mat-label>Message:</mat-label>
+                <textarea matInput formControlName="message" rows="4" required></textarea>
+                <mat-error *ngIf="submitted && contactForm.get('message')?.invalid">Mensaje es requerido</mat-error>
+              </mat-form-field>
+          </div>
+          <div class="text-end">
+            <button mat-raised-button color="primary" type="submit"><i class="fa-regular fa-paper-plane" style="color: #ffffff;"></i><span class="mx-1">Send</span></button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,26 @@
+.text-truncate-custom {
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2; /* Número de líneas a mostrar antes de aplicar la sangría */
+    line-clamp: 2; /* Número de líneas a mostrar antes de aplicar la sangría */
+    max-height: 3.6rem; /* Altura máxima en rem (ajustar según necesidad) */
+  }
+
+#contenedor{   
+     max-height: 60vh;
+    overflow-y: auto;
+    border: 1px solid #1F6CAB;
+  }
+  mat-card-content{
+    height: 90%;
+  }
+  .card-header{
+    border-bottom: 1px solid #1F6CAB;
+    background-color: white;
+  }
+  .list-group-item{
+    border:none;
+  }
+  
+
+  

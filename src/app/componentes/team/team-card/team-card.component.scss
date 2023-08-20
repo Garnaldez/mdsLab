@@ -1,0 +1,78 @@
+mat-card{
+    border: 1px solid #1F6CAB;
+}
+
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+*:hover{
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+section{
+    float:left;
+    width:100%;
+    background:none;  /* fallback for old browsers */
+    padding:30px 0;
+    max-height: fit-content;
+    
+}
+h1{float:left; width:100%; color:#232323; margin-bottom:30px; font-size: 14px;}
+h1 span{font-family: 'Libre Baskerville', serif; display:block; font-size:45px; text-transform:none; margin-bottom:20px; margin-top:30px; font-weight:700}
+h1 a{color:#131313; font-weight:bold;}
+
+.profile-card-5 .btn{
+    border-radius:2px;
+    text-transform:uppercase;
+    font-size:12px;
+    padding:7px 20px;
+}
+.profile-card-5 .card-img-block {
+    width: 91%;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    
+}
+.profile-card-5 .card-img-block img{
+    border-radius:5px;
+    box-shadow:0 0 10px rgba(0,0,0,0.63);
+    width: fit-content;
+    max-width: 100%;
+}
+.profile-card-5 h4{
+    color:#1F6CAB;
+    font-weight:400;
+}
+.profile-card-5 p{
+    font-size:14px;
+    font-weight:300;
+    
+}
+.profile-card-5 .btn-primary{
+    background-color:#1F6CAB;
+    border-color:#1F6CAB;
+}
+.profile-card-5 h3{
+    color:#1F6CAB;
+    font-weight:500;
+    margin-bottom: 0;
+    font: 500 22px/28px Roboto, "Helvetica Neue", sans-serif;
+}
+.profile-card-5{
+    min-width: 30vh;
+}
+.fa-brands{
+    font-size: 30px;
+    color: #1F6CAB;
+}
+@media (min-width: 1800px) {
+    .col-xxxl-8 {
+      flex: 0 0 auto;
+      width: 75%;
+    }
+}
