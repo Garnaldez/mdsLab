@@ -5,20 +5,6 @@ import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/cor
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
-  animations: [
-    trigger('slideInOut', [
-      state('start', style({
-        transform: 'translateX(0)',
-        opacity: 1
-      })),
-      state('done', style({
-        transform: 'translateX(-100%)',
-        opacity: 0
-      })),
-      transition('* => done', animate('300ms ease-in-out')),
-      transition('* => start', animate('300ms ease-in-out'))
-    ])
-  ]
 })
 export class HeaderComponent implements OnInit {
   title = 'mdslab';

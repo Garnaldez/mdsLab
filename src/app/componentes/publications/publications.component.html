@@ -1,4 +1,8 @@
 
+<div class=" align-text-center d-flex justify-content-center introduction">
+  <h3 >Publications
+  </h3>
+ </div>
   <div id="carouselExampleIndicators" class="carousel slide h-75" data-ride="carousel">
     <div class="carousel-indicators bottom">
       <button class="btn p-0" *ngFor="let year of years; let i = index" [ngClass]="step == i ? 'selected' : 'notSelected'" (click)="goToYear(year)" matTooltip="{{year}}">

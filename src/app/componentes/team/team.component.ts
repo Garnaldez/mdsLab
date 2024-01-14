@@ -30,6 +30,16 @@ export class TeamComponent implements OnInit {
       urlTwitter: "https://twitter.com/juancarloscorra",
       galones: ["M. Sc. Biochemistry, Molecular Biology and Biomedicine (Universidad Complutense de Madrid)",
                 "B. Sc. Chemistry  (Universidad Autónoma de Madrid)",]
+    },
+    {
+      name: "Silvia Socas",
+      role: "Master's student",
+      urlImagen: "../../assets/Silvia.jpg",
+      urlLinkedin: undefined,
+      urlOrcid: undefined,
+      urlTwitter: undefined,
+      galones: ["M.M. Sc. Neuroscience (Universidad Complutense)",
+                "B. Sc. Biochemistry (Universidad Autónoma de Madrid)",]
     }
   ];
 

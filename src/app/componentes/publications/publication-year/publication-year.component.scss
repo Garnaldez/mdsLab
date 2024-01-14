@@ -9,14 +9,15 @@
 #contenedor{   
      max-height: 60vh;
     overflow-y: auto;
-    border: 1px solid #1F6CAB;
+    border: 1px solid #161616;
+    min-height: 60vh;
   }
   mat-card-content{
     height: 90%;
   }
   .card-header{
-    border-bottom: 1px solid #1F6CAB;
-    background-color: white;
+    border-bottom: 1px solid #161616;
+    background-color: #FAFAFA;
   }
   .list-group-item{
     border:none;

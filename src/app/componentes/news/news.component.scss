@@ -1,0 +1,35 @@
+.news-container {
+    max-width: 80%;
+    margin: 20px auto;
+  }
+  
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea el contenido superiormente */
+  }
+  
+  .news-item.left-align {
+    flex-direction: row-reverse;
+  }
+  
+  .news-item.right-align {
+    flex-direction: row;
+  }
+  
+  .news-image {
+    max-height: 250px; /* Ajusta la altura máxima según tus necesidades */
+    max-width: 100%;
+    object-fit: cover; /* Asegura que la imagen mantenga su relación de aspecto y cubra el contenedor */
+    margin-right: 10px; /* Añade un margen derecho para separar la imagen del texto */
+  }
+  
+  .news-content {
+    flex-grow: 1;
+  }
+  
+  .news-content h2 {
+    margin-top: 0; /* Elimina el margen superior del encabezado h2 para que esté pegado a la imagen */
+  }

@@ -1,0 +1,7 @@
+<div class=" align-text-center d-flex justify-content-center introduction">
+    <h3 >News
+    </h3>
+   </div>
+   <div *ngFor="let new of sortedNewsArray(); let i = index" >
+   <app-labnew [labNew]="new"></app-labnew>
+  </div>

@@ -22,7 +22,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { PublicationComponent } from './componentes/publications/publication-year/publication/publication.component';
-import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapsModule } from '@angular/google-maps';
+import { PicsubheaderComponent } from './componentes/picsubheader/picsubheader.component';
+import { ResearchComponent } from './componentes/research/research.component';
+import { NewsComponent } from './componentes/news/news.component'
+import { LabnewComponent } from './componentes/news/labnew/labnew.component';
+import { OpportunitiesComponent } from './componentes/opportunities/opportunities.component';
 
 
 
@@ -38,7 +43,12 @@ import { GoogleMapsModule } from '@angular/google-maps'
     PublicationsComponent,
     PublicationYearComponent,
     ContactComponent,
-    PublicationComponent
+    PublicationComponent,
+    PicsubheaderComponent,
+    ResearchComponent,
+    NewsComponent,
+    LabnewComponent,
+    OpportunitiesComponent,
   ],
   imports: [
     BrowserModule,

@@ -8,15 +8,6 @@ ul {
     .fa-2xl {
         font-size: 3em;
     }
-    .prev{
-        left: -10vh;
-    }
-    .next{
-        right: -10vh;
-    }
-    .bottom{
-        bottom: -10vh;
-    }
     .btn {
         background:none
     }
@@ -24,7 +15,7 @@ ul {
         cursor: pointer;
     }
     .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
-        color: #fff;
+        color: #161616;
         text-decoration: none;
         outline: 0;
         opacity: .5;
@@ -33,9 +24,9 @@ ul {
         opacity: .9;
     }
     .selected{
-       color: #1F6CAB;
+       color: #161616;
     }
     .notSelected{
-        color: #1F6CAB;
+        color: #161616;
         opacity: 0.5;
     }

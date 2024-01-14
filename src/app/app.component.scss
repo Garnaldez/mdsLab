@@ -3,6 +3,7 @@
 }
 main{
     height: 100%;
+    min-height: 800px;
 }
 #content {
     
@@ -19,14 +20,13 @@ mat-sidenav {
     width: max-content;
     background: none !important;
     box-shadow:none !important;
+    height: fit-content;
 }
 mat-list-item a {
     text-decoration: none;
     color: #000;
 }
 app-footer {
-    bottom: 0%;
-    position: fixed;
     min-height: 5vh;
     width: 100%;
     justify-content: end;
@@ -45,15 +45,7 @@ img{
     display: block;
     border-radius: 10px;
 }
-.mat-drawer-container {
-    background: none !important;
-    color: rgba(0,0,0,.87);
-}
 
-#main > mat-sidenav-container > div.mat-drawer-backdrop.ng-star-inserted.mat-drawer-shown {
-    background-color: rgba(0,0,0,0) !important;
-    
-}
 .mat-list-base .mat-list-item {
     color: white;
 }
@@ -65,4 +57,14 @@ img{
   }
   .mat-drawer-content {
     overflow: hidden !important;
+ 
+}
+
+.mat-list-base .mat-list-item {
+    font-size: 32px !important;
+    margin-bottom: 20px;
+}
+
+.icon{
+    color:#DFD0C0 ;
 }

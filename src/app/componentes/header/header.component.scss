@@ -1,9 +1,10 @@
 #header{
-    min-height: 10vh;
+    min-height: 15vh;
 }
 #mat-toolbar{
     min-height: 10vh;
-    background:none !important
+    background:none !important;
+    padding-top: 3em;
 }
 
 #mat-toolbar > button{
@@ -11,22 +12,21 @@
     border-style: none !important;
 }
 h1 {
-    width:500px;
     margin: 0 auto;
     text-align: center;
-    color: white;
+    color: #DFD0C0 ;
 }
 mat-icon{
-    color: white;
-    font-size: 40px;
+    color: #DFD0C0 ;
+    font-size: 60px;
     height: 30px;
     width: 30px;
 }
   .title{
     font-size: 40px;
-    color: white;
+    color: #DFD0C0 ;
     text-align: center;
-    border-bottom: 2px solid #FFF !important;
+    border-bottom: 2px solid #DFD0C0 !important;
   }
   .pointer{
     cursor: pointer;
