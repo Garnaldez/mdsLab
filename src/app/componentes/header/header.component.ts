@@ -7,7 +7,7 @@ import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/cor
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  title = 'mdslab';
+  title = 'S&DLab';
   menuAnimationState: string = 'out';
 
   @ViewChild('sidenav') sidenav: any;
