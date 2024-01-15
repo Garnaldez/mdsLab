@@ -34,7 +34,7 @@ export class TeamComponent implements OnInit {
     {
       name: "Silvia Socas",
       role: "Master's student",
-      urlImagen: "../../assets/Silvia.jpg",
+      urlImagen: "../../assets/SilviaSocas.jpg",
       urlLinkedin: undefined,
       urlOrcid: undefined,
       urlTwitter: undefined,

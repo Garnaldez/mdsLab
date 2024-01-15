@@ -35,7 +35,7 @@ export class NewsComponent implements OnInit {
     title: "Miguel Lobete starts his PhD thanks to a FPI fellowship. Well deserved, Miguel!"
 },
 {
-    urlImagen: "assets/lola-6.jpg",
+    urlImagen: "assets/SilviaSocas.jpg",
     date: "January 2024",
     title: "Silvia Socas joins the lab!"
 },
