@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/mdsLab",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
