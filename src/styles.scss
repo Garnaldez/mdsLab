@@ -43,6 +43,7 @@ h2 {
   }
   h1 {
     font: 300 60px/50px 'Libre Baskerville', "Helvetica Neue", sans-serif !important;
+    text-align: justify;
     
   }
   h1,h2,h3,p{
@@ -53,7 +54,8 @@ h2 {
 }
 p{
   font: 400 24px/20px 'Libre Baskerville', "Helvetica Neue", sans-serif;
-  line-height: normal;
+  line-height: 1.5em;
+  text-align: justify;
 }
 .list-group-item{
   border-bottom: #DFD0C0 1px solid;
@@ -101,7 +103,7 @@ p{
 }
 
 img{
-  max-width: 100%;
+  max-width: 80%;
 }
 
 ul {

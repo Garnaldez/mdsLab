@@ -11,7 +11,7 @@ export class TeamComponent implements OnInit {
   readonly members:Member[] = [  
     {
       name: "Lola Martín de Saavedra, PhD",
-      role: "Assistant Professor",
+      role: "Group Leader",
       urlImagen: "../../assets/lola-6.jpg",
       urlLinkedin: "https://www.linkedin.com/in/dmsau/",
       urlOrcid: "https://orcid.org/0000-0001-8527-493X",

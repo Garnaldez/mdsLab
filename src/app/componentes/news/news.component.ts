@@ -22,7 +22,7 @@ export class NewsComponent implements OnInit {
 {
     urlImagen: "assets/3.IBRO.jpeg",
     date: "September 2023",
-    title: "Our IP, Lola Martín-de-Saavedra, receives an Early Career Award from the International Brain Research Organization (IBRO)."
+    title: "Lola Martín-de-Saavedra, our Group Leader, receives an Early Career Award from the International Brain Research Organization (IBRO)."
 },
 {
     urlImagen: "assets/4. Lola presenting.jpg",
