@@ -11,6 +11,11 @@ import { OpportunitiesComponent } from './componentes/opportunities/opportunitie
 const routes: Routes = [
   {
     path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
+  {
+    path: 'home',
     component: HomeComponent,
   },
   {

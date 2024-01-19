@@ -28,6 +28,7 @@ import { ResearchComponent } from './componentes/research/research.component';
 import { NewsComponent } from './componentes/news/news.component'
 import { LabnewComponent } from './componentes/news/labnew/labnew.component';
 import { OpportunitiesComponent } from './componentes/opportunities/opportunities.component';
+import { NavBarComponent } from './componentes/nav-bar/nav-bar.component';
 
 
 
@@ -49,6 +50,7 @@ import { OpportunitiesComponent } from './componentes/opportunities/opportunitie
     NewsComponent,
     LabnewComponent,
     OpportunitiesComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,

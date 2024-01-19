@@ -17,7 +17,7 @@ export class NewsComponent implements OnInit {
 {
     urlImagen: "assets/2. Cafeteria.jpg",
     date: "June 2023",
-    title: "All the lab celebrating Miguel Lobete's amazing Master's Thesis Presentation. From left to right: Miguel, Lola, Mª Jesus Oset, Beatriz Chamorro and Sara Izquierdo"
+    title: "All the lab celebrating Miguel Lobete's amazing Master's Thesis presentation. From left to right: Miguel, Lola, Mª Jesus Oset, Beatriz Chamorro and Sara Izquierdo."
 },
 {
     urlImagen: "assets/3.IBRO.jpeg",
@@ -27,7 +27,7 @@ export class NewsComponent implements OnInit {
 {
     urlImagen: "assets/4. Lola presenting.jpg",
     date: "September 2023",
-    title: "Lola Presenting data on ectodomain shedding at IBRO 2023 in Granada (Spain)."
+    title: "Lola presenting data on ectodomain shedding at IBRO 2023 in Granada (Spain)."
 },
 {
     urlImagen: "assets/5.-Miguel-microscope (1).jpg",

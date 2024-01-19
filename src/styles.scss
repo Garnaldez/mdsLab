@@ -23,11 +23,15 @@ h2 {
     
   }
   h3 {
-    font: 100 40px/10px "Libre Baskerville", "Helvetica Neue", sans-serif !important;
+    font: 100 60px/10px "Libre Baskerville", "Helvetica Neue", sans-serif !important;
     color: #DFD0C0 ;
     text-align: start;
     margin-bottom: 20px;
     line-height: 50px !important;
+    
+  }
+  h4 {
+    font: 100 20px/32px "Libre Baskerville", "Helvetica Neue", sans-serif !important;
     
   }
   .btn{
@@ -58,9 +62,8 @@ p{
   text-align: justify;
 }
 .list-group-item{
-  border-bottom: #DFD0C0 1px solid;
-  padding-right: 10px;
-  font: 400 18px/20px 'Libre Baskerville', "Helvetica Neue", sans-serif;
+  font: 400 28px/20px 'Libre Baskerville', "Helvetica Neue", sans-serif;
+  color: #DFD0C0 !important;
 }
 
 .mat-drawer-backdrop.mat-drawer-shown {
@@ -70,7 +73,7 @@ p{
 .mat-drawer-container {
   // background: none; 
     color: rgba(0,0,0,.87);
-    background: linear-gradient(180deg, #161616 50%, #DFD0C0  0%);
+    background: linear-gradient(180deg, #161616 20vh, #DFD0C0  0%);
 }
 
 .mat-drawer-content {
@@ -92,10 +95,6 @@ p{
 
 .introduction {
   margin: 10rem 0!important;
-}
-
-.list-group-item {
-  color: #161616;
 }
 
 .mat-drawer-content {
@@ -123,5 +122,5 @@ ul {
   }
 
 .membrane{
-  width:90%;
+  width:70%;
 }

@@ -8,23 +8,7 @@ import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/cor
 })
 export class HeaderComponent implements OnInit {
   title = 'S&DLab';
-  menuAnimationState: string = 'out';
-
-  @ViewChild('sidenav') sidenav: any;
-  @Output() showMenuEmitter = new EventEmitter<boolean>();
-
   showMenu: boolean = false;
-
-  animationDone(event: any) {
-    if (event.toState === 'done') {
-      this.sidenav.close();
-    }
-  }
-
-  toggleMenu() {
-    this.showMenu = !this.showMenu;
-    this.showMenuEmitter.emit(this.showMenu);
-  }
 
 
   constructor() { }

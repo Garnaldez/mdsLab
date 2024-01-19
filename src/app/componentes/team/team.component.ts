@@ -38,8 +38,18 @@ export class TeamComponent implements OnInit {
       urlLinkedin: undefined,
       urlOrcid: undefined,
       urlTwitter: undefined,
-      galones: ["M.M. Sc. Neuroscience (Universidad Complutense)",
+      galones: ["M. Sc. Neurosciences (Universidad Complutense de Madrid)",
                 "B. Sc. Biochemistry (Universidad Autónoma de Madrid)",]
+    },
+    {
+      name: "Tamel Salinas",
+      role: "Alumni, ex Master's student",
+      urlImagen: "../../assets/Tamel.jpg",
+      urlLinkedin: undefined,
+      urlOrcid: undefined,
+      urlTwitter: undefined,
+      galones: ["M. Sc. Neurosciences   (Universidad Complutense de Madrid)",
+                "B. Sc. Psychology   (Universidad de Barcelona)",]
     }
   ];
 

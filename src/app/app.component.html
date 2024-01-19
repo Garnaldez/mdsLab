@@ -1,40 +1,8 @@
-<app-header  (showMenuEmitter)="toggleMenu($event)"></app-header>
+<app-header></app-header>
+<app-nav-bar></app-nav-bar>
 <app-picsubheader></app-picsubheader>
 <div id="main">
 <mat-sidenav-container [hasBackdrop]="true" class="d-flex justify-content-center">
-  <mat-sidenav #sidenav mode="over" [opened]="showMenu">
-    <mat-nav-list>
-      <a mat-list-item class="list-group-item width" routerLink="" (click)="toggleMenu(false)">
-        <i class="fa-solid fa-home icon"  ></i>
-        <span class="mx-2">Home</span>
-      </a>
-      <a mat-list-item class="list-group-item width" routerLink="labMembers" (click)="toggleMenu(false)">
-        <i class="fa-solid fa-people-group icon" ></i>
-        <span class="mx-2">Lab Members</span>
-      </a>
-      <a mat-list-item class="list-group-item width" routerLink="research" (click)="toggleMenu(false)">
-        <i class="fa-solid fa-flask icon" ></i>
-        <span class="mx-2">Research</span>
-      </a>
-      <a mat-list-item class="list-group-item width" routerLink="news" (click)="toggleMenu(false)">
-        <i class="fa-solid fa-newspaper icon" ></i>
-        <span class="mx-2">News</span>
-      </a>
-      <a mat-list-item class="list-group-item width" routerLink="publications" (click)="toggleMenu(false)">
-        <i class="fa-solid fa-folder icon"></i>
-        <span class="mx-2">Publications</span>
-      </a>
-      <a mat-list-item class="list-group-item width" routerLink="opportunities" (click)="toggleMenu(false)">
-        <i class="fa-solid fa-star icon"></i>
-        <span class="mx-2">Opportunities</span>
-      </a>
-      <a mat-list-item class="list-group-item width" routerLink="contact" (click)="toggleMenu(false)">
-        <i class="fa-solid fa-envelope icon"></i>
-        <span class="mx-2">Contact</span>
-      </a>
-      
-    </mat-nav-list>
-  </mat-sidenav>
     <main class="">
     <router-outlet></router-outlet>
   </main>
