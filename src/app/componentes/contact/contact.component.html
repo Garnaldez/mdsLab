@@ -6,18 +6,15 @@
 <div class="container ">
     <div class="row container card flex-row justify-content-between">
      
-      <div class="col-md-8 row">
+      <div class="col-md-8 row justify-content-between">
 
         
         
-      <google-map class="col-md-8" [center]="{lat: lat, lng: long}" [options]="options">
+      <google-map class="col-md-7" [center]="{lat: lat, lng: long}" [options]="options">
         <map-marker [position]="{lat: lat, lng: long}"></map-marker>
       </google-map>
-      <div class="col-md-4 justify-content-around d-flex flex-column">
-        <div class="card-header">
-          <h2 class="text-center"><i class="fa-regular fa-compass fa-2xl" style="color: #1f6cab;"></i></h2>
-        </div>
-        <div class="mx-1 d-flex justify-content-start flex-column"> 
+      <div class="col-md-5 justify-content-around d-flex flex-column">
+        <div class="mx-1 d-flex justify-content-center flex-column"> 
         <p>Laboratory 13</p>
         <p>Department of Biochemistry and Molecular Biology</p>
         <p>School of Pharmacy</p>

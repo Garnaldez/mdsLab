@@ -5,10 +5,15 @@
   .list-group-item-nav{
     font: 400 32px/20px 'Libre Baskerville', "Helvetica Neue", sans-serif;
     color: #DFD0C0 !important;
-    margin: 0 2em;
     white-space: nowrap;
     line-height: 2 !important;
+    width: 100%;
   }
   nav{
     margin-bottom: 3em;
+  }
+
+  width-item{
+    width: max-content;
+    margin: auto;
   }
