@@ -42,4 +42,9 @@
     line-height: initial;
     vertical-align: -.1875em;
 }
+#main > mat-sidenav-container > mat-sidenav-content > main > app-contact > div > div.container > div > div.col-md-8.row.justify-content-between > google-map > div{
+  width: 100% !important;
+  position: relative;
+  overflow: hidden;
+}
  

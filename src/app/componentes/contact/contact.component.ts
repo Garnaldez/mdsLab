@@ -20,6 +20,7 @@ export class ContactComponent implements OnInit {
     disableDoubleClickZoom: true,
     maxZoom: 25,
     minZoom:15,
+
   };
 
   constructor(private formBuilder: FormBuilder) {}
