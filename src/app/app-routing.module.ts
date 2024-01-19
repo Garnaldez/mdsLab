@@ -47,7 +47,6 @@ const routes: Routes = [
 
 export const routesExtraOptions: ExtraOptions = {
   useHash: false,
-  onSameUrlNavigation: "reload",
   anchorScrolling: "enabled",
   scrollOffset: [0, 55],
   scrollPositionRestoration: "enabled",
