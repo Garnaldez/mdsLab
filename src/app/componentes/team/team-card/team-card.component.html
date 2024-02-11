@@ -1,9 +1,9 @@
 
-<section class="pt-0 mb-5">
-  <div class="container">
+<section class="pt-0 mb-5" >
+  <div class="container" >
     <div class="d-flex justify-content-center h-100"> 
       <div class="col-md-12 col-xs-12 col-xxl-10 col-sm-12 col-xxxl-8">
-        <div class="card profile-card-5 h-100 d-flex flex-column">
+        <div class="card profile-card-5 h-100 d-flex flex-column" (mouseenter)="showSidebar()" (mouseleave)="hideSidebar()">
           <div class="card-img-block justify-content-center d-flex">
             <img class="card-img-top" src={{member.urlImagen}} alt="Imagen de perfil de {{member.name}}" height="300" width="210">
           </div>
@@ -25,6 +25,10 @@
               <a *ngIf="member.urlTwitter" class="mx-2" href={{member.urlTwitter}} target="_blank">
                 <i class="fa-brands fa-square-twitter fa-2x"></i>
               </a>
+              <div class="extra-info-sidebar mx-2" (click)="openModal()" *ngIf="member.infoExtraImage && showSidebarFlag">
+                <a class="fas fa-info" ></a>
+                <!-- Agrega tu contenido de información adicional aquí -->
+              </div>
             </div>
           </div>
         </div>
@@ -32,4 +36,22 @@
     </div>
   </div>
 </section>
+<div class="modal" [class.show-modal]="modalOpen">
+  <div class="modal-content">
+    <!-- Botón de cierre -->
+    <span class="close" (click)="closeModal()">&times;</span>
+    <img class="modal-image mb-5" [src]="member.infoExtraImage" [alt]="'Imagen de perfil de ' + member.name" >
+    <div class="container">
+      <p>I received my B.Sc. in Pharmacy from Universidad Complutense de Madrid (UCM, 2004), and later pursued a Master’s degree in Research and Development of New Drugs at Universidad de Navarra (2007). For my PhD, I joined the lab of Manuela G. López at Universidad Autónoma de Madrid (UAM), where I studied the role of the master antioxidant regulator NRF2 in major depression. Here, I also contributed to the repurposing of known drugs for neurodegenerative disorders such as Alzheimer’s disease. Additionally, I enjoyed two scientific stays at University College London (UK) and Universidad de Navarra.</p>
+      <p>In 2012, I started my post-doctoral research <a href="https://sites.northwestern.edu/penzeslab/">in the lab of Dr. Peter Penzes</a> at Northwestern University (Chicago, USA). My work primarily centered on studying the role of synaptic proteins in neuropsychiatric disorders, with a specific focus on the regulation of CNTNAP2 by ectodomain shedding. I explored how this regulatory mechanism impacts calcium dynamics and neuronal connectivity.</p>
+      <p>In September 2020, I secured an Assistant Professor position at UCM and joined the <a href="https://sites.northwestern.edu/penzeslab/">Neurotransmission and Neurorreparation Group</a>. Briefly after, I was awarded with a grant from the Spanish Research Agency to establish my independent research program. This program aims to investigate whether ectodomain shedding regulates neurodevelopmental conditions such as autism, schizophrenia, and epilepsy.</p>
+      <p>In addition to my research, I teach Clinical Biochemistry, Biochemistry and Molecular Biology to Pharmacy and Biochemistry undergraduates at UCM. I am involved in teaching activities in the Master’s of Pharmacological Research program at UAM.</p>
+      <p>In my free time, I love travelling, running, yoga, and enjoying some quality time with my three kids and my partner.</p>
+      <p>Learn more about my research:</p>
+      <ul>
+        <li><a href="https://scholar.google.com/citations?user=g8x4TCgAAAAJ&amp;hl=en&amp;oi=ao"><p>My Google Scholar</p></a></li>
+        <li><a href="https://produccioncientifica.ucm.es/indicadores/citas?persona=143965"><p>UCM Scientific Production Portal</p></a></li>
+      </ul>
+    </div>
+  </div>
 

@@ -17,12 +17,12 @@ export class NewsComponent implements OnInit {
   {
     urlImagen: "assets/2. Cafeteria.jpg",
     date: "June 2023",
-    title: "All the lab celebrating Miguel Lobete's amazing Master's Thesis presentation. From left to right: Miguel, Lola, Mª Jesus Oset, Beatriz Chamorro and Sara Izquierdo."
+    title: "All the lab celebrating Miguel Lobete's amazing Master's Thesis presentation. From left to right: Miguel, Lola Martín-de-Saavedra, Mª Jesus Oset, Beatriz Chamorro and Sara Izquierdo."
   },
   {
     urlImagen: "assets/3.IBRO.jpeg",
     date: "September 2023",
-    title: "Lola Martín-de-Saavedra, our Group Leader, receives an Early Career Award from the International Brain Research Organization (IBRO)."
+    title: "Lola Martín-de-Saavedra, receives an Early Career Award from the International Brain Research Organization (IBRO)."
   },
   {
     urlImagen: "assets/4. Lola presenting.jpg",
@@ -41,7 +41,7 @@ export class NewsComponent implements OnInit {
   {
     urlImagen: "assets/SilviaSocas.jpg",
     date: "January 2024",
-    title: "Silvia Socas joins the lab!"
+    title: "Silvia Socas joins the lab to do her Master's research project!"
   },
 
 

@@ -6,4 +6,6 @@ export interface Member{
     urlOrcid?:string,
     urlTwitter?:string,
     galones?:string[]
+    infoExtraImage?:string,
+    infoExtraText?:string
 }
