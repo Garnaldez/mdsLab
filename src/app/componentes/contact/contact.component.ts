@@ -11,8 +11,8 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 export class ContactComponent implements OnInit {
   contactForm!: FormGroup;
   submitted = false;
-  lat = 40.44598;
-  long = -3.72506;
+  lat = 40.445374672028;
+  long = -3.726383646860517;
   options: google.maps.MapOptions = {
     mapTypeId: 'hybrid',
     zoomControl: false,
@@ -22,6 +22,8 @@ export class ContactComponent implements OnInit {
     minZoom:15,
 
   };
+  attachment: File | null = null;
+  attachmentName: string = '';
 
   constructor(private formBuilder: FormBuilder) {}
 
@@ -29,10 +31,11 @@ export class ContactComponent implements OnInit {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
-      message: ['', Validators.required]
+      message: ['', Validators.required],
+      attachment: [null]
     });
   }
-  onSubmit() {
+  onSubmit(e: Event) {
     this.submitted = true;
     this.contactForm.updateValueAndValidity();
     this.contactForm.markAllAsTouched();
@@ -40,7 +43,7 @@ export class ContactComponent implements OnInit {
       // Aquí puedes implementar la lógica para enviar el correo electrónico
       // Por ejemplo, utilizando una API de terceros o una función en el backend de Angular
      let mail = this.contactForm.value;
-      emailjs.send('service_sa5a0ca', 'template_gwgqy5a', mail, 'NLwUoElVObUN3-Kgh') 
+      emailjs.sendForm('service_sa5a0ca', 'template_gwgqy5a', e.target as HTMLFormElement, 'NLwUoElVObUN3-Kgh') 
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
       }, (error) => {
@@ -50,6 +53,17 @@ export class ContactComponent implements OnInit {
       console.log('Formulario enviado:', this.contactForm.value);
     } else {
       console.log('Formulario inválido. Verifica los campos.');
+    }
+  }
+
+  onFileSelected(event: any) {
+    const file: File = event.target.files[0];
+    if (file) {
+      this.attachment = file;
+      this.attachmentName = file.name;
+      this.contactForm.patchValue({
+        attachment: this.attachment
+      });
     }
   }
 

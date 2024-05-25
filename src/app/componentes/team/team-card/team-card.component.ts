@@ -12,19 +12,10 @@ export class TeamCardComponent implements OnInit {
 
   modalOpen: boolean = false;
   extraInfo: string = "Texto de información adicional";
-  showSidebarFlag: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  showSidebar() {
-    this.showSidebarFlag = true;
-  }
-
-  hideSidebar() {
-    this.showSidebarFlag = false;
   }
 
   openModal() {

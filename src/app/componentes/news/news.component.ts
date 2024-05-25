@@ -39,11 +39,15 @@ export class NewsComponent implements OnInit {
     title: "Miguel Lobete starts his PhD thanks to a FPI fellowship. Well deserved, Miguel!"
   },
   {
-    urlImagen: "assets/SilviaSocas.jpg",
+    urlImagen: "assets/SilviaSocas.png",
     date: "January 2024",
     title: "Silvia Socas joins the lab to do her Master's research project!"
   },
-
+  {
+    urlImagen: "assets/April2024.jpg",
+    date: "April 2024",
+    title: "As part of our initiatives at the Sheddome and Disease Lab, we participated in the Week of Culture at an elementary school in Madrid by hosting an engaging event titled \"How Does the Brain Work?\" The kids were very excited and asked a lot of questions!"
+  },
 
   ];
 

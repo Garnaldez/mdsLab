@@ -19,13 +19,13 @@
         <p>Department of Biochemistry and Molecular Biology</p>
         <p>School of Pharmacy</p>
         <p>Pl. de Ramón y Cajal, s/n </p>
-        <p> 28040 Madrid</p>
+        <p> 28040 Madrid, Spain</p>
       </div>
       </div>
        
       </div>
       <div class="col-md-4 py-4 border-form">
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit($event)">
           <div class="form-group">
             <mat-form-field appearance="fill">
                 <mat-label>Name:</mat-label>
@@ -47,6 +47,13 @@
                 <textarea matInput formControlName="message" rows="4" required></textarea>
                 <mat-error *ngIf="submitted && contactForm.get('message')?.invalid">Mensaje es requerido</mat-error>
               </mat-form-field>
+          </div>
+          <div class="form-group">
+            <div appearance="fill">
+                <button type="button" mat-raised-button (click)="fileInput.click()">Attach file</button>
+                <input hidden (change)="onFileSelected($event)" #fileInput type="file" id="file">
+                <span *ngIf="attachmentName" class="ms-2">{{ attachmentName }}</span>
+            </div>
           </div>
           <div class="text-end">
             <button mat-raised-button color="primary" type="submit"><i class="fa-regular fa-paper-plane" style="color: #ffffff;"></i><span class="mx-1">Send</span></button>

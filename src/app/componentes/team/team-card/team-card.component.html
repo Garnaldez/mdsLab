@@ -3,7 +3,7 @@
   <div class="container" >
     <div class="d-flex justify-content-center h-100"> 
       <div class="col-md-12 col-xs-12 col-xxl-10 col-sm-12 col-xxxl-8">
-        <div class="card profile-card-5 h-100 d-flex flex-column" (mouseenter)="showSidebar()" (mouseleave)="hideSidebar()">
+        <div class="card profile-card-5 h-100 d-flex flex-column">
           <div class="card-img-block justify-content-center d-flex">
             <img class="card-img-top" src={{member.urlImagen}} alt="Imagen de perfil de {{member.name}}" height="300" width="210">
           </div>
@@ -25,8 +25,8 @@
               <a *ngIf="member.urlTwitter" class="mx-2" href={{member.urlTwitter}} target="_blank">
                 <i class="fa-brands fa-square-twitter fa-2x"></i>
               </a>
-              <div class="extra-info-sidebar mx-2" (click)="openModal()" *ngIf="member.infoExtraImage && showSidebarFlag">
-                <a class="fas fa-info" ></a>
+              <div class="extra-info-sidebar mx-2" (click)="openModal()" *ngIf="member.infoExtraImage">
+                <a class="fas fa-plus" ></a>
                 <!-- Agrega tu contenido de información adicional aquí -->
               </div>
             </div>
