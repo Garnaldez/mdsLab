@@ -1,6 +1,3 @@
-.active-link {
-    border-bottom: #DFD0C0 3px solid;
-  }
 
   .list-group-item-nav{
     font: 400 32px/20px 'Libre Baskerville', "Helvetica Neue", sans-serif;
@@ -16,4 +13,15 @@
   width-item{
     width: max-content;
     margin: auto;
+  }
+  .list-group-item-nav {
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+  }
+  
+  .active-link {
+    border-bottom: 3px solid #DFD0C0;
+  }
+  .list-group-item-nav:hover {
+    border-bottom: 3px solid #DFD0C0;
   }

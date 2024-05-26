@@ -7,5 +7,6 @@ export interface Member{
     urlTwitter?:string,
     galones?:string[]
     infoExtraImage?:string,
-    infoExtraText?:string
+    infoExtraText?:string,
+    position?: number
 }

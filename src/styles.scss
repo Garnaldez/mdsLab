@@ -95,6 +95,7 @@ p{
 
 .introduction {
   margin: 10rem 0!important;
+  margin-top: 5rem !important;
 }
 
 .mat-drawer-content {
@@ -123,4 +124,7 @@ ul {
 
 .membrane{
   width:70%;
+}
+.mat-drawer-container {
+  position: static !important;
 }

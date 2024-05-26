@@ -156,3 +156,19 @@ h1 a{color:#131313; font-weight:bold;}
   a{
     text-decoration: none;
   }
+  .scale:hover{
+    transform: scale(1.5);
+  }
+  .shadow{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+  }
+  .elevated {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+                0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .elevated:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25), 
+                0 4px 6px rgba(0, 0, 0, 0.1);
+  }

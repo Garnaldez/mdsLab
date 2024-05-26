@@ -3,7 +3,7 @@
   <div class="container" >
     <div class="d-flex justify-content-center h-100"> 
       <div class="col-md-12 col-xs-12 col-xxl-10 col-sm-12 col-xxxl-8">
-        <div class="card profile-card-5 h-100 d-flex flex-column">
+        <div class="card profile-card-5 h-100 d-flex flex-column elevated">
           <div class="card-img-block justify-content-center d-flex">
             <img class="card-img-top" src={{member.urlImagen}} alt="Imagen de perfil de {{member.name}}" height="300" width="210">
           </div>
@@ -25,8 +25,8 @@
               <a *ngIf="member.urlTwitter" class="mx-2" href={{member.urlTwitter}} target="_blank">
                 <i class="fa-brands fa-square-twitter fa-2x"></i>
               </a>
-              <div class="extra-info-sidebar mx-2" (click)="openModal()" *ngIf="member.infoExtraImage">
-                <a class="fas fa-plus" ></a>
+              <div class="extra-info-sidebar mx-2" (click)="openModal()">
+                <a class="fas fa-plus scale" ></a>
                 <!-- Agrega tu contenido de información adicional aquí -->
               </div>
             </div>
@@ -41,17 +41,54 @@
     <!-- Botón de cierre -->
     <span class="close" (click)="closeModal()">&times;</span>
     <img class="modal-image mb-5" [src]="member.infoExtraImage" [alt]="'Imagen de perfil de ' + member.name" >
-    <div class="container">
-      <p>I received my B.Sc. in Pharmacy from Universidad Complutense de Madrid (UCM, 2004), and later pursued a Master’s degree in Research and Development of New Drugs at Universidad de Navarra (2007). For my PhD, I joined the lab of Manuela G. López at Universidad Autónoma de Madrid (UAM), where I studied the role of the master antioxidant regulator NRF2 in major depression. Here, I also contributed to the repurposing of known drugs for neurodegenerative disorders such as Alzheimer’s disease. Additionally, I enjoyed two scientific stays at University College London (UK) and Universidad de Navarra.</p>
-      <p>In 2012, I started my post-doctoral research <a href="https://sites.northwestern.edu/penzeslab/">in the lab of Dr. Peter Penzes</a> at Northwestern University (Chicago, USA). My work primarily centered on studying the role of synaptic proteins in neuropsychiatric disorders, with a specific focus on the regulation of CNTNAP2 by ectodomain shedding. I explored how this regulatory mechanism impacts calcium dynamics and neuronal connectivity.</p>
-      <p>In September 2020, I secured an Assistant Professor position at UCM and joined the <a href="https://sites.northwestern.edu/penzeslab/">Neurotransmission and Neurorreparation Group</a>. Briefly after, I was awarded with a grant from the Spanish Research Agency to establish my independent research program. This program aims to investigate whether ectodomain shedding regulates neurodevelopmental conditions such as autism, schizophrenia, and epilepsy.</p>
-      <p>In addition to my research, I teach Clinical Biochemistry, Biochemistry and Molecular Biology to Pharmacy and Biochemistry undergraduates at UCM. I am involved in teaching activities in the Master’s of Pharmacological Research program at UAM.</p>
-      <p>In my free time, I love travelling, running, yoga, and enjoying some quality time with my three kids and my partner.</p>
-      <p>Learn more about my research:</p>
+    <div [ngSwitch]="member.position">
+    <div *ngSwitchCase="1" class="container">
+      <p>Lola received her B.Sc. in Pharmacy from Universidad Complutense de Madrid
+        (UCM, 2004), and later pursued a Master’s degree in Research and
+        Development of New Drugs at Universidad de Navarra (2007). For her PhD, she
+        joined the lab of Manuela G. López at Universidad Autónoma de Madrid
+        (UAM), where she studied the role of the master antioxidant regulator NRF2 in
+        major depression. Here, she also contributed to the repurposing of known
+        drugs for neurodegenerative disorders such as Alzheimer’s disease.
+        Additionally, she enjoyed two scientific stays at University College London (UK)
+        and Universidad de Navarra.</p>
+      <p>In 2012, she started her post-doctoral research in the <a href="https://sites.northwestern.edu/penzeslab/">lab of Dr. Peter Penzes</a> at
+        Northwestern University (Chicago, USA). Her work primarily centered on
+        studying the role of synaptic proteins in neuropsychiatric disorders, with a
+        specific focus on the regulation of CNTNAP2 by ectodomain shedding. She
+        explored how this regulatory mechanism impacts calcium dynamics and
+        neuronal connectivity.</p>
+        <p>In September 2020, she secured an Assistant Professor position at UCM and
+          joined the <a href="https://sites.northwestern.edu/penzeslab/">Neurotransmission and Neurorreparation Group.</a> Briefly after, she
+          was awarded with a grant from the Spanish Research Agency to establish her
+          independent research program. This program aims to investigate whether
+          ectodomain shedding regulates neurodevelopmental conditions such as
+          autism, schizophrenia, and epilepsy.</p>
+      
+      <p>In addition to her research, she teaches Clinical Biochemistry, Biochemistry and
+        Molecular Biology to Pharmacy and Biochemistry undergraduates at
+        Universidad Complutense.</p>
+      <p>In her free time, she loves travelling, running, and enjoying some quality time
+        with her three kids and her partner.</p>
+      <p>Learn more about her research:</p>
       <ul>
         <li><a href="https://scholar.google.com/citations?user=g8x4TCgAAAAJ&amp;hl=en&amp;oi=ao"><p>My Google Scholar</p></a></li>
-        <li><a href="https://produccioncientifica.ucm.es/indicadores/citas?persona=143965"><p>UCM Scientific Production Portal</p></a></li>
+        <li><a href="https://produccioncientifica.ucm.es/investigadores/143965/detalle"><p>UCM Scientific Production Portal</p></a></li>
       </ul>
     </div>
+    <div *ngSwitchCase="2" class="container">
+      <p>Miguel received his B. Sc. in Chemistry from Universidad Autónoma de Madrid and completed his Master’s in Biochemistry,  Molecular Biology and Biomedicine at Universidad Complutense. He first joined the lab for his Master’s project in 
+        2022 and stayed to complete his Thesis. His thesis research investigates the different determinants of the molecular and functional composition of the brain sheddome. He is also interested in deepening into the understanding of how the 
+        regulation of risk factors for neuropsychiatric disorders by ectodomain shedding impacts neuronal function. In his free time, he officiates soccer matches, making split-second decisions that can turn the tide of the game!</p>
+    </div>
+    <div *ngSwitchCase="3" class="container">
+      <p>Silvia obtained her B. Sc. in Biochemistry from Universidad Autónoma de Madrid. She joined the Sheddome and Disease lab in September 2023 to do her research project as part of the Master’s Neurosciences at Universidad Complutense. 
+        Her research focuses on how neuronal activity and neuroplasticity shape ectodomain shedding. When she is not in the lab, she enjoys going to concerts, particularly if they are in Lanzarote, her island of origin.</p>
+    </div>
+    <div *ngSwitchCase="4" class="container">
+      <p>Tamel received his B. Sc. in Psychology from Universidad de Barcelona. He obtained a M. Sc. in Neuroscience from Universidad Complutense. During his time in the lab, he set up a protocol for analyzing brain sheddomes using biochemistry,
+         proteomics and bioinformatic tools. He also analyzed the brain sheddome under different conditions. He is currently working as an assistant researcher, studying the effect of high-fat diet on memory performance in mice. </p>
+    </div>
   </div>
+</div>
 
