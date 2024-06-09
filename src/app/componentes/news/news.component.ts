@@ -30,7 +30,7 @@ export class NewsComponent implements OnInit {
     title: "Lola presenting data on ectodomain shedding at IBRO 2023 in Granada (Spain)."
   }, {
     urlImagen: "assets/SfN2023.jpg",
-    date: "November 2023.",
+    date: "November 2023",
     title: "Attending conferences is fun! This is Lola and her friends from her postdoctoral stage at the conference Society for Neuroscience 2023 celebrated in Washington DC."
   },
   {
@@ -47,6 +47,11 @@ export class NewsComponent implements OnInit {
     urlImagen: "assets/April2024.jpg",
     date: "April 2024",
     title: "As part of our initiatives at the Sheddome and Disease Lab, we participated in the Week of Culture at an elementary school in Madrid by hosting an engaging event titled \"How Does the Brain Work?\" The kids were very excited and asked a lot of questions!"
+  },
+  {
+    urlImagen: "assets/1.AEIMartaNew.png",
+    date: "Jun 2024",
+    title: "Marta Cámara, a former student of Lola's Clinical Biochemistry classes, will join the lab to do her final degree research project."
   },
 
   ];
