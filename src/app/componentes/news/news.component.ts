@@ -49,7 +49,7 @@ export class NewsComponent implements OnInit {
     title: "As part of our initiatives at the Sheddome and Disease Lab, we participated in the Week of Culture at an elementary school in Madrid by hosting an engaging event titled \"How Does the Brain Work?\" The kids were very excited and asked a lot of questions!"
   },
   {
-    urlImagen: "assets/1.AEIMartaNew.png",
+    urlImagen: "assets/MartaNew.jpg",
     date: "Jun 2024",
     title: "Marta Cámara, a former student of Lola's Clinical Biochemistry classes, will join the lab to do her final degree research project."
   },

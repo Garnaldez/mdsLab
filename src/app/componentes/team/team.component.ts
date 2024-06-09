@@ -53,12 +53,12 @@ export class TeamComponent implements OnInit {
       name: "Marta Cámara",
       position: 5,
       role: "Undergraduate student",
-      urlImagen: "../../assets/SilviaSocas.png",
+      urlImagen: "../../assets/Marta.jpg",
       urlLinkedin: undefined,
       urlOrcid: undefined,
       urlTwitter: undefined,
       galones: ["B. Sc. Biochemistry (Universidad Complutense)",],
-                infoExtraImage: "../../assets/Marta.png"
+                infoExtraImage: "../../assets/Marta.jpg"
     },
     {
       name: "Tamel Salinas",
