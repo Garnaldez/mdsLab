@@ -26,11 +26,13 @@ mat-icon{
     font-size: 40px;
     color: #DFD0C0 ;
     text-align: center;
+    align-content: center;
   }
   .pointer{
     cursor: pointer;
   }
   .logoTitle{
-    height: 16vh;
-    max-width: 16vh;
+    height: 20vh;
+    max-width: 20vh;
+    padding-top: 2vh;
   }
